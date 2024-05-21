@@ -12,9 +12,7 @@ async function postPredictHandler(request, h) {
   const data = {
     "id": id,
     "result": label,
-    "explanation": explanation,
     "suggestion": suggestion,
-    "confidenceScore": confidenceScore,
     "createdAt": createdAt
   }
   await storeData(id, data);
